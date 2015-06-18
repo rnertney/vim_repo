@@ -17,6 +17,7 @@ set nocompatible
 
 " An example for a gvimrc file.
 " The commands in this are executed when the GUI is started.
+"B
 "
 " Maintainer:	Bram Moolenaar <Bram@vim.org>
 " Last change:	2000 Mar 29
@@ -37,8 +38,8 @@ set ignorecase smartcase
 set ruler
 
 " set the X11 font to use
-" set guifont=-misc-fixed-medium-r-normal--14-130-75-75-c-70-iso8859-1
-" set guifont=9x15
+" set guifont=-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
+ "set guifont=9x15
 
 
 " Make command line two lines high
@@ -64,6 +65,7 @@ highlight LineNr guifg=grey43
 
 
 command! E execute "NERDTree"
+command! Shell execute "ConqueTerm tcsh"
 command! Home execute "cd Z:\\"
 command! Cohome execute "cd X:\\"
 command! Techsup execute "cd V:\\"

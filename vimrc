@@ -41,6 +41,8 @@ set ruler
 " set guifont=-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
  "set guifont=9x15
 
+ " change dir to whatever file i'm working on
+set autochdir
 
 " Make command line two lines high
 set ch=2

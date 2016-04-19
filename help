@@ -1,0 +1,22 @@
+delete a line containing a pattern:
+  :g/foo/d
+
+delete all lines NOT containing pattern:
+  :v/foo/d
+
+ctags
+  <outside> ctags -R -f path/to/tags/file
+  :se tags=/path/to/tags/file
+  :ta foo
+  :tn = next
+
+SCREEN
+  C-a ___
+      c: create
+      A: rename
+      d: detach
+      n: next
+      p: previous
+      H: logfile
+screen -r: reattach
+ 

@@ -10,26 +10,6 @@
 execute pathogen#infect()
 syn on
 set nocompatible
-"source $VIMRUNTIME/vimrc_example.vim
-"source $VIMRUNTIME/mswin.vim
-"behave mswin
-
-
-" An example for a gvimrc file.
-" The commands in this are executed when the GUI is started.
-"B
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2000 Mar 29
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.gvimrc
-"             for Amiga:  s:.gvimrc
-"  for MS-DOS and Win32:  $VIM\_gvimrc
-"           for OpenVMS:  sys$login:.gvimrc
-
-" Make external commands work through a pipe instead of a pseudo-tty
-"set noguipty
 
 "Add for case insensitive search
 set ignorecase smartcase
@@ -125,3 +105,4 @@ vmap <C-c> "+yi
 vmap <C-x> "+c
 vmap <C-v> c<ESC>"+p
 imap <C-v> <C-r><C-o>+
+

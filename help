@@ -4,6 +4,12 @@ delete a line containing a pattern:
 delete all lines NOT containing pattern:
   :v/foo/d
 
+delete all whitespace lines:
+  :v/\S/d
+
+delete all empty lines (might be covered by above, but it matches all but whitespace):
+  :v/./d
+
 ctags
   <outside> ctags -R -f path/to/tags/file
   :se tags=/path/to/tags/file

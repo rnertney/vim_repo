@@ -17,6 +17,10 @@ set ignorecase smartcase
 "Show cursor position all the time
 set ruler
 
+
+"set cursorline
+"hi CursorLine term=bold cterm=bold guibg=Grey40
+
 " set the X11 font to use
 " set guifont=-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
  "set guifont=9x15
@@ -35,6 +39,8 @@ set hlsearch
 " Match up braces, parenthesis etc - hit <SHIFT> %
 set showmatch
 
+hi Search guibg=Red
+hi Search guifg=Black
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>

@@ -51,7 +51,7 @@ set nu
 highlight Normal guibg=grey13 guifg=white
 highlight LineNr guifg=grey43
 
-
+command! -nargs=1 Find vimgrepadd <q-args> % | copen
 command! E execute "NERDTree"
 command! Shell execute "ConqueTerm tcsh"
 command! Home execute "cd Z:\\"

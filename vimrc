@@ -23,9 +23,9 @@ set ruler
 
 " set the X11 font to use
 " set guifont=-misc-fixed-medium-r-semicondensed--13-120-75-75-c-60-iso8859-1
- "set guifont=9x15
+"set guifont=9x15
 
- " change dir to whatever file i'm working on
+" change dir to whatever file i'm working on
 set autochdir
 
 " Make command line two lines high
@@ -107,8 +107,21 @@ nmap <F3> <C-\>s!
 
 
 
-vmap <C-c> "+yi
-vmap <C-x> "+c
-vmap <C-v> c<ESC>"+p
-imap <C-v> <C-r><C-o>+
+"vmap <C-c> "+yi
+"vmap <C-x> "+c
+"vmap <C-v> c<ESC>"+p
+"imap <C-v> <C-r><C-o>+
 
+
+"syntastic stuff
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+highlight SyntasticErrorSign guifg=white guibg=red
+highlight SyntasticErrorLine guibg=#2f0000

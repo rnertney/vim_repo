@@ -115,13 +115,17 @@ nmap <F3> <C-\>s!
 
 "syntastic stuff
 
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
+"
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 1
+"let g:syntastic_c_include_dirs = ['/proj/petalinux/petalinux-v2015.4_daily_latest/petalinux-v2015.4-final/components/linux-kernel/xlnx-4.0/include']
+"let g:syntastic_c_compiler = /scratch/xilinx_tools/SDK/2016.1/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc
+"highlight SyntasticErrorSign guifg=white guibg=red
+"highlight SyntasticErrorLine guibg=#2f0000
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-highlight SyntasticErrorSign guifg=white guibg=red
-highlight SyntasticErrorLine guibg=#2f0000
+

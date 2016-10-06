@@ -32,7 +32,7 @@ set autochdir
 set ch=2
 
 " When <TAB> is hit, put 3 spaces in
-set expandtab
+set noexpandtab
 set tabstop=3
 set shiftwidth=3
 set hlsearch

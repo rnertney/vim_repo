@@ -87,7 +87,6 @@ set backspace=indent,eol,start
 
 filetype plugin indent on
 filetype indent on
-set et
 
 " The next is your tab stop. Lot of people like to keep it 4.
 set sw=2

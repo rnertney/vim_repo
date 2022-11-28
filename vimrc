@@ -41,11 +41,18 @@ set showmatch
 
 hi Search guibg=Red
 hi Search guifg=Black
+
 " Make shift-insert work like in Xterm
 map <S-Insert> <MiddleMouse>
 map! <S-Insert> <MiddleMouse>
 
+" Set Highlight colors to not suck in dark mode
+hi DiffAdd      ctermfg=NONE          ctermbg=Green
+hi DiffChange   ctermfg=NONE          ctermbg=NONE
+hi DiffDelete   ctermfg=LightBlue     ctermbg=Red
+hi DiffText     ctermfg=Yellow        ctermbg=Red
 
+"line numbes
 set nu
 
 highlight Normal guibg=grey13 guifg=white
@@ -54,11 +61,6 @@ highlight LineNr guifg=grey43
 command! -nargs=1 Find vimgrepadd <q-args> % | vert copen
 command! E execute "NERDTree"
 command! Shell execute "ConqueTerm tcsh"
-command! Home execute "cd Z:\\"
-command! Cohome execute "cd X:\\"
-command! Techsup execute "cd V:\\"
-command! Bcapps execute "cd Y:\\"
-command! Local execute "cd C:\\users\\robn\\Desktop"
 command! Tagbar execute "TagbarToggle"
 nmap <F8> :TagbarToggle<CR>
 
@@ -126,5 +128,11 @@ nmap <F3> <C-\>s!
 "let g:syntastic_c_compiler = /scratch/xilinx_tools/SDK/2016.1/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-gcc
 "highlight SyntasticErrorSign guifg=white guibg=red
 "highlight SyntasticErrorLine guibg=#2f0000
-
-
+nnoremap <silent> <ESC>OA <UP>
+nnoremap <silent> <ESC>OB <DOWN>
+nnoremap <silent> <ESC>OC <RIGHT>
+nnoremap <silent> <ESC>OD <LEFT>
+inoremap <silent> <ESC>OA <UP>
+inoremap <silent> <ESC>OB <DOWN>
+inoremap <silent> <ESC>OC <RIGHT>
+inoremap <silent> <ESC>OD <LEFT> 

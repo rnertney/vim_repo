@@ -135,4 +135,4 @@ nnoremap <silent> <ESC>OD <LEFT>
 inoremap <silent> <ESC>OA <UP>
 inoremap <silent> <ESC>OB <DOWN>
 inoremap <silent> <ESC>OC <RIGHT>
-inoremap <silent> <ESC>OD <LEFT> 
+inoremap <silent> <ESC>OD <LEFT>

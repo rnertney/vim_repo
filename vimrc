@@ -136,3 +136,7 @@ inoremap <silent> <ESC>OA <UP>
 inoremap <silent> <ESC>OB <DOWN>
 inoremap <silent> <ESC>OC <RIGHT>
 inoremap <silent> <ESC>OD <LEFT>
+" Map hex code 0x4 (Ctrl+D) to act as the delete key in normal and insert modes
+nnoremap <C-d> x
+inoremap <C-d> <C-o>x
+
